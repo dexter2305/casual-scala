@@ -10,6 +10,21 @@ object RegEx {
     println(s" ${isJustDate("2020-03-23")}")
     extractDateFirstOccurence("dummy")
     extractAllDates("What is 2020-05-23 &  2020-05-24 & 2020-05-25")
+    println("isempty: " + isEmpty(""))
+    println("isempty: " + isEmpty("test"))
+    println(testMatches("s", """(\w+)""".r))
+    println("matches -> " + testMatchSof("12", """(\w+)"""))
+    println("relative: " + relative(20))
+    print5Matrix()
+    printTypeSafeRange1To100()
+  }
+
+  def testMatches(input: String, pattern: Regex): Boolean = {
+    pattern.matches(input)
+  }
+
+  def testMatchSof(input: String, pattern: String): Boolean = {
+    pattern.r.matches(input)
   }
 
   def datePattern(): Regex = {
@@ -36,4 +51,39 @@ object RegEx {
     pattern.findAllMatchIn(text).foreach(println)
   }
 
+  def isEmpty(input: String): String = {
+    val nonEmptyStringPattern = raw"""\w+""".r
+    input match {
+      case nonEmptyStringPattern() => s"matched $input"
+      case _ => "n/a"
+    }
+  }
+
+  def relative(value: Double): String = {
+    value match {
+      case value if value == 0 => "same"
+      case value if value > 0 => "greater"
+      case value if value < 0 => "lesser"
+    }
+  }
+
+  def print5Matrix(): Unit = {
+    for (i <- 1 to 100) {
+      i % 5 match {
+        case 0 => println(i)
+        case _ => print(i + ",")
+      }
+    }
+  }
+
+  def printTypeSafeRange1To100():Unit = {
+    for(i <- 1 to 100){
+      i match {
+        case i if i % 3 ==0 && i % 5 ==0 => println("typesafe")
+        case i if i % 3 ==0 => println("type")
+        case i if i % 5 ==0 => println("safe")
+        case _ => println(i)
+      }
+    }
+  }
 }
