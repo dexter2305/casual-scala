@@ -1,4 +1,4 @@
-package edu.leetcode.mockiws
+package edu.learnings
 
 import scala.annotation.tailrec
 
