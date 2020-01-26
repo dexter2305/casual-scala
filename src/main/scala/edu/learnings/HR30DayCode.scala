@@ -6,7 +6,8 @@ object HR30DayCode {
     println(mealCost(12, 20, 8))
     println(day3_ConditionalStatements(2))
     day5_Loops(2)
-    println(day7_Arrays(Array(1,2,3,4,5,6)))
+    println(day7_Arrays(Array(1, 2, 3, 4, 5, 6)))
+    day6_Review("Hacker")
   }
 
   def day1_DataTypes(): Unit = {
@@ -35,6 +36,16 @@ object HR30DayCode {
     for (i <- 1 to 10) {
       println(s"$n x $i = " + (n * i))
     }
+  }
+
+  def day6_Review(given: String): Unit = {
+
+    def separator(input: String, i: Int, even: String, odd: String): (String, String) = {
+      ???
+    }
+    val (even, odd) = separator(given,0,"","")
+    println(s"even $even & odd $odd")
+    ???
   }
 
   def day7_Arrays(numbers: Array[Int]): String = {

@@ -9,6 +9,7 @@ object Fibonacci {
     println(fib(3)) //1
     println(fib(4)) //2
     println(fibShort(50))
+    println(fibShort(12))
   }
 
   def fib(n: Int): Int = {
