@@ -3,10 +3,15 @@ package edu.learnings
 object LeetCode {
 
   def main(args: Array[String]): Unit = {
-    println(numbersWithSumAs0(4).mkString(" "))
-    println(numbersWithSumAs0(5).mkString(" "))
+    //println(numbersWithSumAs0(4).mkString(" "))
+    //println(numbersWithSumAs0(5).mkString(" "))
     //println(reverseInteger(-210))
     //println(reverseInteger(1534236469))
+    println(lc977_squaresOfSortedArray(Array(-4,-1,0,3,10)).mkString(" "))
+  }
+
+  def lc977_squaresOfSortedArray(numbers: Array[Int]): Array[Int] = {
+    numbers.map(n => n * n).sortWith((x,y) => x < y)
   }
 
   def reverseInteger(n: Int): Int = {
