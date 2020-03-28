@@ -3,15 +3,14 @@ package edu.learnings
 object LeetCode {
 
   def main(args: Array[String]): Unit = {
-    //println(numbersWithSumAs0(4).mkString(" "))
-    //println(numbersWithSumAs0(5).mkString(" "))
-    //println(reverseInteger(-210))
-    //println(reverseInteger(1534236469))
-    println(lc977_squaresOfSortedArray(Array(-4,-1,0,3,10)).mkString(" "))
+
+
   }
 
+
+
   def lc977_squaresOfSortedArray(numbers: Array[Int]): Array[Int] = {
-    numbers.map(n => n * n).sortWith((x,y) => x < y)
+    numbers.map(n => n * n).sortWith((x, y) => x < y)
   }
 
   def reverseInteger(n: Int): Int = {
@@ -50,7 +49,7 @@ object LeetCode {
 
     n % 2 == 0 match {
       case false => (-(n - (n + 1) / 2) to (n - (n + 1) / 2)).toArray
-      case true => ( -(n - n/2) to -1 ).toArray ++ (1 to (n - n/2)).toArray
+      case true => (-(n - n / 2) to -1).toArray ++ (1 to (n - n / 2)).toArray
 
     }
 
@@ -67,7 +66,7 @@ object LeetCode {
     nums.count(n => digitCount(n) % 2 == 0)
   }
 
-    def getDecimalValueUsingString(head: ListNode): Int = {
+  def getDecimalValueUsingString(head: ListNode): Int = {
     @scala.annotation.tailrec
     def helper(node: ListNode, acc: String): String = {
       if (node == null) {
@@ -84,29 +83,28 @@ object LeetCode {
 
   def getDecimalValUsingInt(head: ListNode): Int = {
 
-      def size(head: ListNode): Int = {
-        @scala.annotation.tailrec
-        def count(node: ListNode, c:Int) : Int = {
-          node match {
-            case node if (node == null) => c
-            case _ => count(node.next, c + 1)
-          }
-        }
-        count(head, 0)
-      }
-
+    def size(head: ListNode): Int = {
       @scala.annotation.tailrec
-      def asInt(node: ListNode, high: Int, acc: Int): Int = {
-        if (null == node) {
-          acc
-        } else {
-          asInt(node.next, high -1, acc + (node._x * Math.pow(2, high).toInt) )
+      def count(node: ListNode, c: Int): Int = {
+        node match {
+          case node if (node == null) => c
+          case _ => count(node.next, c + 1)
         }
-
       }
-      asInt(head,size(head) -1, 0)
-  }
+      count(head, 0)
+    }
 
+    @scala.annotation.tailrec
+    def asInt(node: ListNode, high: Int, acc: Int): Int = {
+      if (null == node) {
+        acc
+      } else {
+        asInt(node.next, high - 1, acc + (node._x * Math.pow(2, high).toInt))
+      }
+
+    }
+    asInt(head, size(head) - 1, 0)
+  }
 
 }
 
