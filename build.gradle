@@ -7,7 +7,9 @@
  */
 
 // Apply the scala plugin to add support for Scala
-apply plugin: 'scala'
+plugins {
+    id 'scala'
+}
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -15,8 +17,6 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
-
-def scalaVersion="2.13.1"
 
 dependencies {
     // Use Scala 2.11 in our library project
