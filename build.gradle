@@ -9,6 +9,7 @@
 // Apply the scala plugin to add support for Scala
 plugins {
     id 'scala'
+    id 'application'
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -29,3 +30,4 @@ dependencies {
     testRuntimeOnly 'org.scala-lang.modules:scala-xml_2.13:1.0.6'
 }
 
+mainClassName='edu.learnings.lc.HappyNumberApp'
