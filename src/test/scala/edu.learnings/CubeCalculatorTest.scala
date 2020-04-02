@@ -1,6 +1,5 @@
 package edu.learnings;
 
-//import org.scalatest.Assertions._
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
@@ -15,4 +14,3 @@ class CubeCalculatorTest extends FunSuite {
     assert(CubeCalculator.fcube(3) == 27)
   }
 }
-
