@@ -9,7 +9,8 @@ object HappyNumber {
       println(s"($slow, $fast)")
 
       if (fast == 1) true
-      else slow == fast match {
+      else 
+        slow == fast match {
         case true => slow == 1
         case false => helper(sumOfSquaredDigits(slow), sumOfSquaredDigits(sumOfSquaredDigits(fast)))
         }

@@ -1,4 +1,4 @@
-//PatternMatching.scala
+package edu.learnings
 
 case class Animal(breed: String)
 
