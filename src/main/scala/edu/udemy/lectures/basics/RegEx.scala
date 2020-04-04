@@ -71,7 +71,7 @@ object RegEx {
     for (i <- 1 to 100) {
       i % 5 match {
         case 0 => println(i)
-        case _ => print(i + ",")
+        case _ => print(s"$i ,")
       }
     }
   }

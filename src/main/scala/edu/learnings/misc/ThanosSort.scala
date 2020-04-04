@@ -9,7 +9,7 @@ object ThanosSort {
   def n(): Int = scala.io.StdIn.readInt()
 
   def fetchUserInput(n: Int): IndexedSeq[Int] = {
-    scala.io.StdIn.readLine().split(" ").take(n).map(_.toInt)
+    scala.io.StdIn.readLine().split(" ").take(n).map(e => e.toInt).toIndexedSeq
   }
 
   def thanosSnap(seq: IndexedSeq[Int]): Int = {

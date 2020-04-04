@@ -5,7 +5,7 @@ case class Animal(breed: String)
 case class Vehicle(wheelCount: Int)
 
 object PMMain{
-  def main(args: Array[String]){
+  def main(args: Array[String]) = {
     println(animal(new Animal("dog")).get)
     println(animal(new Vehicle(3)).getOrElse("Not an animal"))
   }

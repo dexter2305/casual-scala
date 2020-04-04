@@ -13,7 +13,7 @@ object ArrayOps {
     else {
       var pUnique = 0
       for (i <- 1 until nums.length) {
-        println(nums(i) + " vs " + nums(pUnique))
+        println(s"${nums(i)} vs ${nums(pUnique)}")
         if (nums(i) != nums(pUnique)) {
           pUnique = pUnique + 1
           nums(pUnique) = nums(i)
