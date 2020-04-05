@@ -2,7 +2,7 @@
 package edu.learnings.lc
 
 import org.scalatest.FunSuite
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 import org.junit.runner.RunWith
 
 import edu.learnings.lc.HappyNumber
@@ -15,7 +15,7 @@ class HappyNumberSuite extends FunSuite{
   }
 
   test("0 is not a happy number") {
-    assert(HappyNumber.isHappy(0) == false)
+    assert(!HappyNumber.isHappy(0))
   }
 
   test("19 is a happy number") {
@@ -35,7 +35,7 @@ class HappyNumberSuite extends FunSuite{
   }
 
   test("sumOfSquaredDigits(89)") {
-    assert(HappyNumber.sumOfSquaredDigits(89) == (Math.pow(8,2) + (Math.pow(9,2)) ) )
+    assert(HappyNumber.sumOfSquaredDigits(89) == (Math.pow(8,2) + Math.pow(9,2)) )
   }
 
 }

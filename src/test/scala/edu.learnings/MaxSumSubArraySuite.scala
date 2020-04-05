@@ -3,7 +3,7 @@ package edu.learnings.lc
 import edu.learnings.lc.MaxSumSubArrayApp
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class MaxSumSubArraySuite extends FunSuite {
