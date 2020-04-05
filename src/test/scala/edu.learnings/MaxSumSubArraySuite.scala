@@ -1,4 +1,4 @@
-package edu.learnings
+package edu.learnings.lc
 
 import edu.learnings.lc.MaxSumSubArrayApp
 import org.junit.runner.RunWith
