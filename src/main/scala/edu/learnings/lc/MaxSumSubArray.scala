@@ -1,7 +1,7 @@
 
 package edu.learnings.lc
 
-object MaxSumSubArrayApp {
+object MaxSumSubArray {
   def main(args: Array[String]): Unit = {
     println(maxSubArray(Array(-4, 6, -3, 5)))
     //println(maxSubArray(Array(-1)))
