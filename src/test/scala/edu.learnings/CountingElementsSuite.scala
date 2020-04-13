@@ -2,7 +2,7 @@ package edu.learnings
 
 import edu.learnings.lc.CountingElements
 
-class CountingElementsSuite extends BaseTest {
+class CountingElementsSuite extends BaseSuite {
 
   test("Array with no elements present") {
     assert(CountingElements.countingElements(Array(1, 3, 5)) == 0)

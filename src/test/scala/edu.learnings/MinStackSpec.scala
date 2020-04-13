@@ -3,12 +3,8 @@ package edu.learnings
 import java.lang.RuntimeException
 
 import edu.learnings.lc.MinStack
-import org.junit.runner.RunWith
-import org.scalatest.FlatSpec
-import org.scalatestplus.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
-class MinStackSpec extends FlatSpec {
+class MinStackSpec extends BaseSpec {
 
   "push(1) and top " should "return 1 " in {
     val stack = new MinStack()

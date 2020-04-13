@@ -1,12 +1,8 @@
 package edu.learnings
 
 import edu.learnings.lc.MaxProfit
-import org.junit.runner.RunWith
-import org.scalatest.FunSuite
-import org.scalatestplus.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
-class MaxProfitSuite extends FunSuite {
+class MaxProfitSuite extends BaseSuite {
 
   test("Price decreases every day") {
     assert(MaxProfit.maxProfit(Array(4, 3, 2, 1)) == 0)

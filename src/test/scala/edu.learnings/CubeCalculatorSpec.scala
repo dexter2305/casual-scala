@@ -1,13 +1,14 @@
 package edu.learnings
 
-import org.junit.runner.RunWith
-import org.scalatest.FlatSpec
-import org.scalatestplus.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
-class CubeCalculatorSpec extends FlatSpec{
+
+class CubeCalculatorSpec extends BaseSpec {
 
   "Cube of 3" should "return 27" in {
     assert(27 == CubeCalculator.fcube(3))
+  }
+
+  "Cube of 0" should "return 0" in {
+    assert(CubeCalculator.fcube(0) == 0)
   }
 }

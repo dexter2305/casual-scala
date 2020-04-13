@@ -2,7 +2,7 @@ package edu.learnings
 
 import edu.learnings.lc.{ListNode, MiddleNode}
 
-class MiddleNodeSuite extends BaseTest {
+class MiddleNodeSuite extends BaseSuite {
 
   test("Linked list with single node should return the same node") {
     val smallestList = new ListNode(1)

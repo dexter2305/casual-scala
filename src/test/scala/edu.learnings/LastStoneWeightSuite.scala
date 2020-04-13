@@ -1,7 +1,7 @@
 package edu.learnings
 
 import edu.learnings.lc.LastStoneWeight
-class LastStoneWeightSuite extends BaseTest {
+class LastStoneWeightSuite extends BaseSuite {
 
   test("Array (1) = 1")  {
     assert(LastStoneWeight.lastStoneWeight(Array(1)) == 1)

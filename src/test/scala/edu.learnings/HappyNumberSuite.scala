@@ -1,14 +1,10 @@
 
 package edu.learnings.lc
 
-import org.scalatest.FunSuite
-import org.scalatestplus.junit.JUnitRunner
-import org.junit.runner.RunWith
+import edu.learnings.BaseSuite
 
-import edu.learnings.lc.HappyNumber
 
-@RunWith(classOf[JUnitRunner])
-class HappyNumberSuite extends FunSuite{
+class HappyNumberSuite extends BaseSuite{
 
   test("1 is a happy number") {
     assert(HappyNumber.isHappy(1))

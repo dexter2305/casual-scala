@@ -1,16 +1,12 @@
 package edu.learnings
 
-import org.junit.runner.RunWith
-import org.scalatest.FunSuite
-import org.scalatestplus.junit.JUnitRunner
-
 import edu.learnings.lc.MoveZeroes
-@RunWith(classOf[JUnitRunner])
-class MoveZeroesSuite extends FunSuite{
 
-  test("array with no zeroes"){
-    val array = Array(1,2,3,4,5)
-    assert(MoveZeroes.moveZeroes(array).sameElements(array) )
+class MoveZeroesSuite extends BaseSuite {
+
+  test("array with no zeroes") {
+    val array = Array(1, 2, 3, 4, 5)
+    assert(MoveZeroes.moveZeroes(array).sameElements(array))
   }
 
   test("array with scattered zeroes"){

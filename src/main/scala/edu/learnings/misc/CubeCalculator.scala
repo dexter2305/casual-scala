@@ -8,5 +8,5 @@ object CubeCalculator{
 
   def cube(x: Int): Int = x * x * x
 
-  val fcube = (x: Int) => Math.pow(x, 3)
+  val fcube: Int => Double = (x: Int) => Math.pow(x, 3)
 }
