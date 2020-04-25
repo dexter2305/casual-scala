@@ -2,6 +2,15 @@ package edu.learnings.ib
 
 import scala.annotation.tailrec
 
+/**
+ * Approach
+ *
+ * - Compare two elements, keep adding smaller one of two to the 'pool' while the larger one remains in 'input'.
+ * - Continue until only the largest remains in the 'input' and rest moved to 'pool.
+ * - Add largest (only element in 'input') to 'sorted'.
+ * - Continue with 'pool' as 'input' until 'pool' is empty.
+ *
+ */
 class BubbleSort {
 
   def sort(numbers: List[Int]): List[Int] = {
