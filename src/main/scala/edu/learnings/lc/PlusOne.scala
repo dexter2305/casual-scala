@@ -3,7 +3,7 @@ package edu.learnings.lc
 object PlusOne {
 
   def main(args: Array[String]): Unit = {
-    println(s"${plusOne(Array(1,2,3)).mkString(" ")}")
+    println(s"${plusOne(Array(1, 2, 3)).mkString(" ")}")
   }
 
 
