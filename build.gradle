@@ -9,7 +9,6 @@
 // Apply the scala plugin to add support for Scala
 plugins {
     id 'scala'
-    id 'application'
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -20,7 +19,6 @@ repositories {
 }
 
 dependencies {
-    // Use Scala 2.11 in our library project
     implementation "org.scala-lang:scala-library:2.13.1"
 
     // Use Scalatest for testing our library
@@ -30,4 +28,3 @@ dependencies {
     testRuntimeOnly 'org.scala-lang.modules:scala-xml_2.13:1.0.6'
 }
 
-mainClassName='edu.learnings.lc.HappyNumberApp'
