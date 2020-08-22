@@ -8,10 +8,10 @@ object RegEx {
     println("hasDate(What is 2020-05-23)" + hasDates("What is 2020-05-23"))
     println("isDate(What is 2020-05-23)" + isJustDate("What is 2020-05-23"))
     println(s" ${isJustDate("2020-03-23")}")
-    extractDateFirstOccurence("dummy")
+    extractDateFirstOccurrence("dummy")
     extractAllDates("What is 2020-05-23 &  2020-05-24 & 2020-05-25")
-    println("isempty: " + isEmpty(""))
-    println("isempty: " + isEmpty("test"))
+    println("isEmpty: " + isEmpty(""))
+    println("isEmpty: " + isEmpty("test"))
     println(testMatches("s", """(\w+)""".r))
     println("matches -> " + testMatchSof("12", """(\w+)"""))
     println("relative: " + relative(20))
@@ -40,7 +40,7 @@ object RegEx {
     datePattern().unanchored.matches(input)
   }
 
-  def extractDateFirstOccurence(text: String): Unit = {
+  def extractDateFirstOccurrence(text: String): Unit = {
     val pattern = datePattern().unanchored
     val pattern(year: String, month: String, date: String) = "this is 2020-12-12 & 2002-02-02"
     println(s"$year $month $date")
