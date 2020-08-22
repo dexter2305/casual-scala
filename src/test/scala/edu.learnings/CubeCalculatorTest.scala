@@ -1,5 +1,7 @@
 package edu.learnings
 
+import edu.learnings.random.CubeCalculator
+
 class CubeCalculatorTest extends BaseSuite {
   test("CubeCalculator.cube") {
     assert(CubeCalculator.cube(3) === 27)

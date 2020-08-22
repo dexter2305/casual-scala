@@ -1,5 +1,6 @@
 
-package edu.learnings;
+package edu.learnings.random
+
 object HackerEarth {
 
   def main(args: Array[String]): Unit = {

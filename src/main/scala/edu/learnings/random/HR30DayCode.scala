@@ -1,4 +1,4 @@
-package edu.learnings
+package edu.learnings.random
 
 object HR30DayCode {
   def main(args: Array[String]): Unit = {

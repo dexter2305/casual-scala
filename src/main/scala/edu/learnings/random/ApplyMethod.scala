@@ -1,5 +1,5 @@
 //ApplyMethod.scala
-package edu.learnings
+package edu.learnings.random
 
 object ApplyMethodMain {
   def main(args: Array[String]): Unit = {

@@ -1,4 +1,4 @@
-package edu.learnings.companions
+package edu.learnings.random
 
 /**
  *  Regular class & object

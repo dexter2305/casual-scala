@@ -1,5 +1,5 @@
 //CaseClass.scala
-package edu.learnings
+package edu.learnings.random
 
 /**
  * case class

@@ -1,8 +1,8 @@
-package edu.learnings
+package edu.learnings.random
 
 object ThanosSort {
 
-  def main(args: Array[String]) = {
+  def main(args: Array[String]): Unit = {
     println(thanosSnap(fetchUserInput(n())))
   }
 
@@ -13,7 +13,7 @@ object ThanosSort {
   }
 
   def thanosSnap(seq: IndexedSeq[Int]): Int = {
-
+    @scala.annotation.tailrec
     def helper(seq: IndexedSeq[Int]): Int = {
       //println(s"Snapping $seq")
       isSorted(seq) match {
@@ -27,7 +27,7 @@ object ThanosSort {
   }
 
   def isSorted(seq: IndexedSeq[Int]): Boolean = {
-
+    @scala.annotation.tailrec
     def helper(seq: IndexedSeq[Int], index: Int): Boolean = {
       if (index == seq.length) true
       else {

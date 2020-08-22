@@ -1,5 +1,5 @@
 //CommandExecer
-package edu.learnings;
+package edu.learnings.random
 
 import scala.sys.process._
 

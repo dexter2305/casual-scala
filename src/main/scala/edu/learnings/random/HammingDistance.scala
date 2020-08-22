@@ -1,4 +1,4 @@
-package edu.learnings
+package edu.learnings.random
 
 import scala.annotation.tailrec
 

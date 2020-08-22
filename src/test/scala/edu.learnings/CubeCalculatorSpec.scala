@@ -1,5 +1,6 @@
 package edu.learnings
 
+import edu.learnings.random.CubeCalculator
 
 
 class CubeCalculatorSpec extends BaseSpec {

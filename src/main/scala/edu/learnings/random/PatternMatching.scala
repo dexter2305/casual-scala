@@ -1,4 +1,4 @@
-package edu.learnings
+package edu.learnings.random
 
 case class Animal(breed: String)
 
