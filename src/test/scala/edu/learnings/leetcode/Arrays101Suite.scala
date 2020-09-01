@@ -2,9 +2,9 @@ package edu.learnings.leetcode
 
 import edu.learnings.BaseSuite
 
-class MaxConsecutiveOnesSuite extends BaseSuite {
+class Arrays101Suite extends BaseSuite {
 
-  private val t = new MaxConsecutiveOnes
+  private val t = new Arrays101
 
   test("array of no 1 has no consecutive 1") {
     assertResult(0)(t.findMaxConsecutiveOnes(Array(0, 0, 0, 0)))
