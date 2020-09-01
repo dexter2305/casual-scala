@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object MaxProfit {
    def maxProfit(prices: Array[Int]): Int = {

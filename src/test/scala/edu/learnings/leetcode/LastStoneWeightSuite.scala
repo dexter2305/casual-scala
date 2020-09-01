@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.LastStoneWeight
+import edu.learnings.BaseSuite
 class LastStoneWeightSuite extends BaseSuite {
 
   test("Array (1) = 1")  {

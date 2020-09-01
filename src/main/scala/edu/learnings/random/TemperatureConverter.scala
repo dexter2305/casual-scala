@@ -1,3 +1,5 @@
+package edu.learnings.random
+
 object TemperatureConverter {
 
   def main(args:Array[String]):Unit = {

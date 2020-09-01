@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object PlusOne {
 
@@ -31,6 +31,7 @@ object PlusOne {
 
 
     def intAsArray(num: Int): Array[Int] = {
+      @scala.annotation.tailrec
       def aux(num: Int, acc: List[Int]): Array[Int] = {
         num < 10 match {
           case true => (num +: acc).toArray

@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object MiddleNode {
   def main(args: Array[String]): Unit = {
@@ -14,6 +14,7 @@ object MiddleNode {
   }
 
   def middleNode(head: ListNode): ListNode = {
+    @scala.annotation.tailrec
     def helper(slow: ListNode, fast: ListNode): ListNode = {
       if (fast == null || fast.next == null) {
         slow
@@ -28,7 +29,7 @@ object MiddleNode {
 }
 
 class ListNode(var _x: Int = 0) {
-  var next: ListNode = null
+  var next: ListNode = _
   var x: Int = _x
 }
 

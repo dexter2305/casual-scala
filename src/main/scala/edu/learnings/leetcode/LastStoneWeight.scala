@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object LastStoneWeight {
   def main(args: Array[String]): Unit = {
@@ -6,21 +6,20 @@ object LastStoneWeight {
   }
 
   def lastStoneWeight(stones: Array[Int]): Int = {
+    @scala.annotation.tailrec
     def helper(stones: Array[Int]): Array[Int] = {
       println(s"-> ${stones.mkString("-")}")
       stones.length match {
         case 1 => stones
-        case _ => {
+        case _ =>
           val x = stones(0)
           val y = stones(1)
-          helper(stones.slice(2,stones.length).prepended((x - y)).sorted.reverse)
-          //helper(stones.slice(2, stones.length).prepended(nonZeroDiff).sorted.reverse)
-        }
+          helper(stones.slice(2, stones.length).prepended(x - y).sorted.reverse)
       }
     }
 
-    val nonZeroDiff:(Int, Int)=>Int = (x: Int, y: Int) => {
-      val diff = x - y;
+    val nonZeroDiff: (Int, Int) => Int = (x: Int, y: Int) => {
+      val diff = x - y
       if (diff > 0) Some(diff) else None
       1
     }

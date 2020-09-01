@@ -1,5 +1,7 @@
 package edu.learnings
-import edu.learnings.lc.BackSpaceStringCompare
+
+import edu.learnings.leetcode.BackSpaceStringCompare
+
 class BackSpaceStringCompareSuite extends BaseSuite {
 
   test("abc# == ab"){

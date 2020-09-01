@@ -1,5 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
+import edu.learnings.BaseSpec
 import edu.learnings.random.CubeCalculator
 
 

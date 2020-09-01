@@ -1,8 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import java.lang.RuntimeException
-
-import edu.learnings.lc.MinStack
+import edu.learnings.BaseSpec
 
 class MinStackSpec extends BaseSpec {
 

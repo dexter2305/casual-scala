@@ -1,5 +1,5 @@
 
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 import edu.learnings.BaseSuite
 

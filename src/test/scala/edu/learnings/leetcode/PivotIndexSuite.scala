@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.PivotIndex
+import edu.learnings.BaseSuite
 
 class PivotIndexSuite extends BaseSuite {
 

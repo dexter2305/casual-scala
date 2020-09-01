@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 import scala.annotation.tailrec
 
@@ -6,14 +6,14 @@ object MoveZeroes {
 
   def main(args: Array[String]): Unit = {
     val numbers = Array(2, 0, 0, 3, 0, 5)
-    println(moveZeroes(numbers))
+    //println(moveZeroes(numbers))
   }
 
   def moveZeroes(numbers: Array[Int]): Array[Int] = {
-    for (index <- 0 until numbers.length) {
+    for (index <- numbers.indices) {
       if (numbers(index) == 0) {
         val optionIndex = nonZeroValuedIndex(numbers, index + 1)
-        if (optionIndex != None) {
+        if (optionIndex.isDefined) {
           numbers(index) = numbers(optionIndex.get)
           numbers(optionIndex.get) = 0
           println(s"updated - ${numbers.mkString(" ")}")

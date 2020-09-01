@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object GroupAnagrams {
   def main(args: Array[String]): Unit = {

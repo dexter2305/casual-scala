@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.MaxProfit
+import edu.learnings.BaseSuite
 
 class MaxProfitSuite extends BaseSuite {
 

@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.CountingElements
+import edu.learnings.BaseSuite
 
 class CountingElementsSuite extends BaseSuite {
 
@@ -34,7 +34,7 @@ class CountingElementsSuite extends BaseSuite {
   test("Testing large array (10^6) with (n-1) elements present") {
     val end = 1_000_000
     val largeArray = (0 until end).toArray
-    val start = System.nanoTime();
+    val start = System.nanoTime()
     val actual = CountingElements.countingElements(largeArray)
     val resptime = System.nanoTime() - start
     println(s"time taken for unique $end numbers is $resptime ~ ${resptime / 1_000_000}ms")

@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.MoveZeroes
+import edu.learnings.BaseSuite
 
 class MoveZeroesSuite extends BaseSuite {
 

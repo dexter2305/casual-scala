@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object CountingElements {
   def main(args: Array[String]): Unit = {

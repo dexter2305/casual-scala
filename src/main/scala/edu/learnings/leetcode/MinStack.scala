@@ -1,8 +1,8 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 class MinStack {
 
-  var current: MintNode = null;
+  var current: MintNode = _
 
   def push(x: Int): Unit = {
     val start = System.nanoTime()
@@ -40,7 +40,7 @@ class MinStack {
     }
   }
 
-  case class MintNode(value: Int, val min: Int, val prev: MintNode) {
+  case class MintNode(value: Int, min: Int, prev: MintNode) {
     override def toString: String = String.valueOf(value) + " - " + {
       if (prev == null) "" else prev.value
     }

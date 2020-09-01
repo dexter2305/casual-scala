@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.{ListNode, MiddleNode}
+import edu.learnings.BaseSuite
 
 class MiddleNodeSuite extends BaseSuite {
 

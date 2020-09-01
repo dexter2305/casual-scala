@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.PlusOne
+import edu.learnings.BaseSuite
 class PlusOneSuite extends BaseSuite {
 
   test("1,2,3 is 1,2,4"){

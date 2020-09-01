@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.lc.DominantIndex
+import edu.learnings.BaseSuite
 
 class DominantIndexSuite extends BaseSuite {
 
@@ -13,7 +13,7 @@ class DominantIndexSuite extends BaseSuite {
   }
 
   test("empty array is -1"){
-    assertResult(-1)((DominantIndex.dominantIndex(Array())))
+    assertResult(-1)(DominantIndex.dominantIndex(Array()))
   }
 
   test("all duplicates is -1"){

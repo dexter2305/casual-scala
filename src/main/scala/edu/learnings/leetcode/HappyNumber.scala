@@ -1,11 +1,12 @@
 //HappyNumber.scala
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object HappyNumber {
 
   def isHappy(n: Int): Boolean = {
     println(s"Checking for $n")
 
+    @scala.annotation.tailrec
     def helper(slow: Int, fast: Int): Boolean = {
       println(s"($slow, $fast)")
 
@@ -24,6 +25,7 @@ object HappyNumber {
   }
 
   def sumOfSquaredDigits(n: Int): Int = {
+    @scala.annotation.tailrec
     def helper(n: Int, acc: Int): Int = {
       n < 10 match {
         case true => acc + n * n

@@ -1,4 +1,4 @@
-package edu.learnings.lc
+package edu.learnings.leetcode
 
 object PivotIndex {
 
@@ -14,23 +14,21 @@ object PivotIndex {
       case 0 => -1
       case 1 => -1
       case 2 => -1
-      case _ => {
+      case _ =>
+        @scala.annotation.tailrec
         def aux(nums: Array[Int], index: Int, leftSum: Int, sum: Int): Int = {
           index equals nums.length match {
             case true => -1
-            case false => {
+            case false =>
               val rightSum = sum - leftSum - nums(index)
               println(s"index$index, nums($index):${nums(index)}  total:$sum left :$leftSum right:$rightSum")
               if (leftSum == rightSum) index
               else aux(nums, index + 1, leftSum + nums(index), sum)
-            }
+
           }
         }
-
         val pivotIndex = aux(nums, 0, 0, nums.sum)
-        //val pivotIndex = aux(nums, 1, nums.head, nums.sum)
         pivotIndex
-      }
     }
     result
   }
