@@ -29,5 +29,4 @@ class Arrays101Suite extends BaseSuite {
   test("array of 1111001111 has 4 consecutive ones") {
     assertResult(4)(t.findMaxConsecutiveOnes(Array(1, 1, 1, 1, 0, 0, 1, 1, 1, 1)))
   }
-
 }
