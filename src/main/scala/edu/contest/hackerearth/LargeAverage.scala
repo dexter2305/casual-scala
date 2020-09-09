@@ -1,5 +1,5 @@
 
-package edu.contest.hefeb2020;
+package edu.contest.hackerearth;
 
 object LargeAverage {
 

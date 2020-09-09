@@ -1,5 +1,5 @@
 
-package edu.learnings.random
+package edu.contest.hackerearth
 
 object HackerEarth {
 
