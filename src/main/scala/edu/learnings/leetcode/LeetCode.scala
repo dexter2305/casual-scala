@@ -1,4 +1,4 @@
-package edu.learnings.random
+package edu.learnings.leetcode
 
 object LeetCode {
 
