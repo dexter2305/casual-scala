@@ -8,7 +8,6 @@ object LeetCode {
   }
 
 
-
   def lc977_squaresOfSortedArray(numbers: Array[Int]): Array[Int] = {
     numbers.map(n => n * n).sortWith((x, y) => x < y)
   }
@@ -16,6 +15,7 @@ object LeetCode {
   def reverseInteger(n: Int): Int = {
 
     def toIntArray(n: Int): Array[Int] = {
+      @scala.annotation.tailrec
       def helper(n: Int, ints: Array[Int]): Array[Int] = {
         if (n < 10) {
           n +: ints
@@ -28,29 +28,33 @@ object LeetCode {
     }
 
     def invert(numbers: Array[Int]): Int = {
+      @scala.annotation.tailrec
       def helper(numbers: Array[Int], index: Int, acc: Int): Int = {
-        index == numbers.length - 1 match {
-          case true => acc + numbers(index) * Math.pow(10, index).toInt
-          case false => helper(numbers, index + 1, acc + numbers(index) * Math.pow(10, index).toInt)
+        if (index == numbers.length - 1) {
+          acc + numbers(index) * Math.pow(10, index).toInt
+        } else {
+          helper(numbers, index + 1, acc + numbers(index) * Math.pow(10, index).toInt)
         }
       }
+
       helper(numbers, 0, 0)
     }
 
     if (n > Integer.MAX_VALUE) 0
-    n > 0 match {
-      case true => invert(toIntArray(Math.abs(n)))
-      case false => -1 * invert(toIntArray(Math.abs(n)))
+    if (n > 0) {
+      invert(toIntArray(Math.abs(n)))
+    } else {
+      -1 * invert(toIntArray(Math.abs(n)))
     }
 
   }
 
   def numbersWithSumAs0(n: Int): Array[Int] = {
 
-    n % 2 == 0 match {
-      case false => (-(n - (n + 1) / 2) to (n - (n + 1) / 2)).toArray
-      case true => (-(n - n / 2) to -1).toArray ++ (1 to (n - n / 2)).toArray
-
+    if (n % 2 == 0) {
+      (-(n - n / 2) to -1).toArray ++ (1 to (n - n / 2)).toArray
+    } else {
+      (-(n - (n + 1) / 2) to (n - (n + 1) / 2)).toArray
     }
 
   }
@@ -63,6 +67,7 @@ object LeetCode {
         case _ => digitCount(n / 10, count + 1)
       }
     }
+
     nums.count(n => digitCount(n) % 2 == 0)
   }
 
@@ -83,14 +88,16 @@ object LeetCode {
 
   def getDecimalValUsingInt(head: ListNode): Int = {
 
+
     def size(head: ListNode): Int = {
       @scala.annotation.tailrec
       def count(node: ListNode, c: Int): Int = {
         node match {
-          case node if (node == null) => c
+          case node if node == null => c
           case _ => count(node.next, c + 1)
         }
       }
+
       count(head, 0)
     }
 
@@ -103,12 +110,14 @@ object LeetCode {
       }
 
     }
+
     asInt(head, size(head) - 1, 0)
+  }
+
+  class ListNode(var _x: Int = 0) {
+    var next: ListNode = _
+    var x: Int = _x
   }
 
 }
 
-class ListNode(var _x: Int = 0) {
-  var next: ListNode = null
-  var x: Int = _x
-}
