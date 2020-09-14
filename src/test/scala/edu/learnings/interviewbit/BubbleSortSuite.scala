@@ -1,7 +1,7 @@
-package edu.learnings.ib
+package edu.learnings.interviewbit
 
 import edu.learnings.BaseSuite
-import edu.learnings.ib.BubbleSort
+import edu.learnings.interviewbit.BubbleSort
 class BubbleSortSuite extends BaseSuite{
 
   test("empty array is sorted") {

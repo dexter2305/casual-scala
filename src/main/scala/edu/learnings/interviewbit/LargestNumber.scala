@@ -1,4 +1,4 @@
-package edu.learnings.ib
+package edu.learnings.interviewbit
 
 object LargestNumber {
   def largestNumber(A: Array[Int]): String = {

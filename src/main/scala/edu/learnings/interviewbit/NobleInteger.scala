@@ -1,4 +1,4 @@
-package edu.learnings.ib
+package edu.learnings.interviewbit
 
 object NobleInteger {
   def main(args: Array[String]): Unit = {

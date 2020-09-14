@@ -1,4 +1,4 @@
-package edu.learnings.ib
+package edu.learnings.interviewbit
 
 import edu.learnings.BaseSuite
 
