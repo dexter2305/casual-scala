@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class FactorialSuite extends BaseSuite{
+class FactorialSuite extends BaseFunSuite{
 
   test("0! is 1"){
     assertResult(1)(Factorial.factorial(0))

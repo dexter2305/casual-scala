@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class MaxProfitSuite extends BaseSuite {
+class MaxProfitSuite extends BaseFunSuite {
 
   test("Price decreases every day") {
     assert(MaxProfit.maxProfit(Array(4, 3, 2, 1)) == 0)

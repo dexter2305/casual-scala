@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class MiddleNodeSuite extends BaseSuite {
+class MiddleNodeSuite extends BaseFunSuite {
 
   test("Linked list with single node should return the same node") {
     val smallestList = new ListNode(1)

@@ -1,8 +1,8 @@
 package edu.learnings.codewars
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class OrderCountOfCharactersSpec extends BaseSpec {
+class OrderCountOfCharactersSpec extends BaseFlatSpec {
 
   val instance = new OrderedCountOfCharacters
   it should "work with example tests" in {

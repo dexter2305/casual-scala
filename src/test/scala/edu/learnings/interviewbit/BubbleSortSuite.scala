@@ -1,8 +1,8 @@
 package edu.learnings.interviewbit
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 import edu.learnings.interviewbit.BubbleSort
-class BubbleSortSuite extends BaseSuite{
+class BubbleSortSuite extends BaseFunSuite{
 
   test("empty array is sorted") {
     assertResult(List[Int]())(BubbleSort(List()))

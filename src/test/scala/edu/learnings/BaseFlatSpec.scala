@@ -5,4 +5,4 @@ import org.scalatest.FlatSpec
 import org.scalatestplus.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-class BaseSpec extends FlatSpec
+class BaseFlatSpec extends FlatSpec

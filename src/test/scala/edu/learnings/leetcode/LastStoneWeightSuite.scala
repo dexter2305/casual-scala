@@ -1,7 +1,7 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
-class LastStoneWeightSuite extends BaseSuite {
+import edu.learnings.BaseFunSuite
+class LastStoneWeightSuite extends BaseFunSuite {
 
   test("Array (1) = 1")  {
     assert(LastStoneWeight.lastStoneWeight(Array(1)) == 1)

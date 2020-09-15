@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class AngryProfessorSpec extends BaseSpec {
+class AngryProfessorSpec extends BaseFlatSpec {
 
   "Professor " should " cancel for min:3 & [-1 -1 2 4]" in {
     assertResult("YES")(AngryProfessor.angryProfessor(3, Array(-1, -1, 2, 4)))

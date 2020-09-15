@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class SpitStringSuite extends BaseSuite {
+class SpitStringSuite extends BaseFunSuite {
 
   test("hacker -> hce akr"){
     assertResult("hce akr")(StringSplit.splitString("hacker"))

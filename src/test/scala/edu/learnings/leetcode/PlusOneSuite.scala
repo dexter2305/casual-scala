@@ -1,7 +1,7 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
-class PlusOneSuite extends BaseSuite {
+import edu.learnings.BaseFunSuite
+class PlusOneSuite extends BaseFunSuite {
 
   test("1,2,3 is 1,2,4"){
     assertResult(Array(1,2,4))(PlusOne.plusOne_failsForLargeArray(Array(1,2,3)))

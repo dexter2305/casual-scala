@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class JumpingOnCloudSuite extends BaseSuite {
+class JumpingOnCloudSuite extends BaseFunSuite {
 
   test("0 returns 0") {
     assertResult(0)(JumpingOnClouds.jumpingOnClouds(Array(0)))

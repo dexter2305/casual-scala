@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class DrawingBookSpec extends BaseSpec {
+class DrawingBookSpec extends BaseFlatSpec {
 
   "Pages to be turned " should "be 0 when n=100 & p=1" in {
     assertResult(0)(DrawingBook.pageCount(100, 1))

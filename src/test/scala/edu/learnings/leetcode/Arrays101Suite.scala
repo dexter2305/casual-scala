@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class Arrays101Suite extends BaseSuite {
+class Arrays101Suite extends BaseFunSuite {
 
   private val t = new Arrays101
 

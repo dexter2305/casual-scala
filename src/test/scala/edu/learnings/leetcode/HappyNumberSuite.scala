@@ -1,10 +1,10 @@
 
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
 
-class HappyNumberSuite extends BaseSuite{
+class HappyNumberSuite extends BaseFunSuite{
 
   test("1 is a happy number") {
     assert(HappyNumber.isHappy(1))

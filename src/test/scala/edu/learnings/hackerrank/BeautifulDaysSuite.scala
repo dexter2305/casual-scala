@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class BeautifulDaysSuite extends BaseSuite {
+class BeautifulDaysSuite extends BaseFunSuite {
 
   test("beautiful days in (20 23 6) are 2 ") {
     assertResult(2)(BeautifulDays.beautifulDays(20, 23, 6))

@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class UtopianTreeSpec extends BaseSpec{
+class UtopianTreeSpec extends BaseFlatSpec{
 
   "Utopian tree height" should " be 1 after 0 cycles" in {
     assertResult(1)(UtopianTree.utopianTree(0))

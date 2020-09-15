@@ -1,9 +1,9 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 import edu.learnings.random.CubeCalculator
 
-class CubeCalculatorTest extends BaseSuite {
+class CubeCalculatorTest extends BaseFunSuite {
   test("CubeCalculator.cube") {
     assert(CubeCalculator.cube(3) === 27)
   }

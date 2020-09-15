@@ -5,4 +5,4 @@ import org.scalatest.FunSuite
 import org.scalatestplus.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
-abstract class BaseSuite extends FunSuite
+abstract class BaseFunSuite extends FunSuite

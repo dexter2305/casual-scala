@@ -2,7 +2,7 @@ package edu.learnings
 
 import edu.learnings.leetcode.BackSpaceStringCompare
 
-class BackSpaceStringCompareSuite extends BaseSuite {
+class BackSpaceStringCompareSuite extends BaseFunSuite {
 
   test("abc# == ab"){
     assert(BackSpaceStringCompare.backspaceCompare("abc#", "ab"))

@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class CountingElementsSuite extends BaseSuite {
+class CountingElementsSuite extends BaseFunSuite {
 
   test("Array with no elements present") {
     assert(CountingElements.countingElements(Array(1, 3, 5)) == 0)

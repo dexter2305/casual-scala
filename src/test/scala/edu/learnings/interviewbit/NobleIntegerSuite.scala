@@ -1,8 +1,8 @@
 package edu.learnings.interviewbit
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class NobleIntegerSuite extends BaseSuite {
+class NobleIntegerSuite extends BaseFunSuite {
 
   test("1,2,3,4 returns 1"){
     assertResult(1)(NobleInteger.solve(Array(1,2,3,4)))

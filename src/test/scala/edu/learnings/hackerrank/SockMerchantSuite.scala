@@ -1,9 +1,9 @@
 package edu.learnings.hackerrank
 
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class SockMerchantSuite extends BaseSuite {
+class SockMerchantSuite extends BaseFunSuite {
 
   test("10 10 10 has 1 pair") {
     assertResult(1)(SockMerchant.sockMerchant(3, Array(10, 10, 10)))

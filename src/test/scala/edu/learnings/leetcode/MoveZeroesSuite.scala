@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class MoveZeroesSuite extends BaseSuite {
+class MoveZeroesSuite extends BaseFunSuite {
 
   test("array with no zeroes") {
     val array = Array(1, 2, 3, 4, 5)

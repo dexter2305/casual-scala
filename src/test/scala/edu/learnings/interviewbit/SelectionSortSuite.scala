@@ -1,8 +1,8 @@
 package edu.learnings.interviewbit
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class SelectionSortSuite extends  BaseSuite {
+class SelectionSortSuite extends  BaseFunSuite {
 
   test("empty list is returned as empty list"){
     assertResult(List[Int]())(SelectionSort.sort(List[Int]()))

@@ -1,8 +1,8 @@
 package edu.learnings.interviewbit
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class PlusOneIBSuite extends BaseSuite {
+class PlusOneIBSuite extends BaseFunSuite {
 
   test("empty array should return empty array"){
     assertResult(Array[Int]())(PlusOne.plusOne(Array[Int]()))

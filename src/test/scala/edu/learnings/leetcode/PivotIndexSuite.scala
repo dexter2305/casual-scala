@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class PivotIndexSuite extends BaseSuite {
+class PivotIndexSuite extends BaseFunSuite {
 
   test("empty array") {
     assert(PivotIndex.pivotIndex(Array()) == -1)

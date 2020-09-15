@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class MinStackSpec extends BaseSpec {
+class MinStackSpec extends BaseFlatSpec {
 
   "push(1) and top " should "return 1 " in {
     val stack = new MinStack()

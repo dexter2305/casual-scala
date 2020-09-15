@@ -1,10 +1,10 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 import edu.learnings.random.CubeCalculator
 
 
-class CubeCalculatorSpec extends BaseSpec {
+class CubeCalculatorSpec extends BaseFlatSpec {
 
   "Cube of 3" should "return 27" in {
     assert(27 == CubeCalculator.fcube(3))

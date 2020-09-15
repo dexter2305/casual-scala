@@ -1,8 +1,8 @@
 package edu.learnings.leetcode
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class DominantIndexSuite extends BaseSuite {
+class DominantIndexSuite extends BaseFunSuite {
 
   test("dominant index in 3, 6, 1, 0 is 1") {
     assert(DominantIndex.dominantIndex(Array(3, 6, 1, 0)) == 1)

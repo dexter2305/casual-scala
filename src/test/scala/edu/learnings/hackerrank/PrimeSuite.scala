@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class PrimeSuite extends BaseSuite {
+class PrimeSuite extends BaseFunSuite {
 
   test("0 is not a prime number") {
     assertResult(false)(Prime.isPrime(0))

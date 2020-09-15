@@ -1,9 +1,9 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 import edu.learnings.hackerrank.NestedLogic.Date
 
-class NestedLogicSuite extends BaseSuite {
+class NestedLogicSuite extends BaseFunSuite {
 
   test("early return has no penalty. 23/12/1234 returned against 19/9/2468.") {
     assertResult(0) {

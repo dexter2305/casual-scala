@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class MiniMaxSumSuite extends BaseSuite {
+class MiniMaxSumSuite extends BaseFunSuite {
 
   test("1 2 3 4 5") {
     assertResult("10 14")(MiniMaxSum.getVal(Array(1, 2, 3, 4, 5)))

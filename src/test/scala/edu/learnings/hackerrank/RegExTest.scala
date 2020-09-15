@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class RegExTest extends BaseSuite {
+class RegExTest extends BaseFunSuite {
 
   test("naturally sorted"){
     val table = List("riya"-> "riya@gmail.com", "julia"-> "julia@gmail.com")

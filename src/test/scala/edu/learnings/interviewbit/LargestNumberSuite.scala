@@ -1,8 +1,8 @@
 package edu.learnings.interviewbit
 
-import edu.learnings.BaseSuite
+import edu.learnings.BaseFunSuite
 
-class LargestNumberSuite extends BaseSuite{
+class LargestNumberSuite extends BaseFunSuite{
 
   test("naturally correct order: 9,34 should return 934"){
     assertResult("934")(LargestNumber.largestNumber(Array(9,34)))

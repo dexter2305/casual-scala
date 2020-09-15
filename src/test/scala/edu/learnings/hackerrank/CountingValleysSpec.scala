@@ -1,8 +1,8 @@
 package edu.learnings.hackerrank
 
-import edu.learnings.BaseSpec
+import edu.learnings.BaseFlatSpec
 
-class CountingValleysSpec extends BaseSpec{
+class CountingValleysSpec extends BaseFlatSpec{
 
   "Valley count" should "be 1 in DDUU" in {
     assertResult(1)(CountingValleys.countingValleys(4, "DDUU"))
