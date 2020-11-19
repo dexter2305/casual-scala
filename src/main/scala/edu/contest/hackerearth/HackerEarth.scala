@@ -1,23 +1,29 @@
 
 package edu.contest.hackerearth
 
-object HackerEarth {
+import scala.annotation.tailrec
 
-  def main(args: Array[String]): Unit = {
-    //println(toggleString(scala.io.StdIn.readLine()))
-    //val (ar1, ar2) = monkAndWelcomeProblemInput()
-    //println(monkAndWelcomeProblem(ar1, ar2).mkString(" "))
-    //val(numbers, n) = findLastOccurenceBy1IndexInput()
-    //println(findLastOccurenceBy1Index(numbers, n))
-    //findLastOccurenceBy1Index(findLastOccurenceBy1IndexInput)
-    //val (n, numbers) = findIndexOfInput()
-    //println(findIndexOf(n, numbers))
-    //println(factorial(scala.io.StdIn.readInt))
-    //val (l, r, k) = countOfDivisorsInput
-    //println(countOfDivisors(l, r, k))
-    //println(isPalindrome(scala.io.StdIn.readLine))
-    val n = scala.io.StdIn.readInt
-    println(scala.io.StdIn.readLine.split(" ").take(n).mkString(" "))
+object HackerEarth extends App{
+
+  countOfDigits()
+
+  def countOfDigits(): Unit = {
+    val input = scala.io.StdIn.readLine()
+    val x = input.toCharArray.filter(_.isDigit).groupBy(identity).map(tuple => (tuple._1.asDigit, tuple._2.length))
+    val nums = input.toCharArray.filter(_.isDigit).map(_.asDigit)
+    for (i <- 0 to 9){
+      println(s"$i ${nums.count(_ == i)}")
+      //println(s"$i ${x.getOrElse(i,0)}")
+    }
+  }
+
+  @tailrec
+  def lifeUniverseAndEverything(): Unit = {
+    scala.io.StdIn.readLine() match {
+      case "42" => None
+      case v => println(s"$v")
+        lifeUniverseAndEverything()
+    }
   }
 
   def isPalindrome(given: String): String = {
