@@ -1,6 +1,6 @@
-package edu.learnings
+package edu.learnings.leetcode
 
-import edu.learnings.leetcode.BackSpaceStringCompare
+import edu.learnings.BaseFunSuite
 
 class BackSpaceStringCompareSuite extends BaseFunSuite {
 
