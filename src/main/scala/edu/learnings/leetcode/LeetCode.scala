@@ -1,12 +1,12 @@
 package edu.learnings.leetcode
 
-object LeetCode {
+object LeetCode extends App{
 
-  def main(args: Array[String]): Unit = {
 
+
+  def reverseGivenArray(given: Array[Int]): Unit = {
 
   }
-
 
   def lc977_squaresOfSortedArray(numbers: Array[Int]): Array[Int] = {
     numbers.map(n => n * n).sortWith((x, y) => x < y)
