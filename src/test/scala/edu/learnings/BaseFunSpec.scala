@@ -1,5 +1,5 @@
 package edu.learnings
 
-import org.scalatest.FunSpec
+import org.scalatest.funspec.AnyFunSpec
 
-class BaseFunSpec extends FunSpec
+class BaseFunSpec extends AnyFunSpec

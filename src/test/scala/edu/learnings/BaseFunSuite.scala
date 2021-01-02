@@ -1,5 +1,5 @@
 package edu.learnings
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
-abstract class BaseFunSuite extends FunSuite
+abstract class BaseFunSuite extends AnyFunSuite

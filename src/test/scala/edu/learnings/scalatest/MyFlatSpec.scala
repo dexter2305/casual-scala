@@ -1,8 +1,6 @@
 package edu.learnings.scalatest
 
 import edu.learnings.BaseFlatSpec
-import org.scalatest.{FlatSpec, Matchers}
-
 
 class MyFlatSpec extends BaseFlatSpec {
 

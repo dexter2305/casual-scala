@@ -1,6 +1,7 @@
 package edu.learnings
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
 
 /**
@@ -10,4 +11,4 @@ import org.scalatest.{FlatSpec, Matchers}
  *    - BeforeAndAfter
  */
 
-class BaseFlatSpec extends FlatSpec with Matchers
+class BaseFlatSpec extends AnyFlatSpec with Matchers
