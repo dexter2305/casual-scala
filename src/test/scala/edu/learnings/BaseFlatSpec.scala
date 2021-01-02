@@ -1,8 +1,7 @@
 package edu.learnings
 
-import org.junit.runner.RunWith
-import org.scalatest.FlatSpec
-import org.scalatestplus.junit.JUnitRunner
+import org.scalatest.{FlatSpec, Matchers}
+
 
 /**
  * Scala recommends using FlatSpec
@@ -10,5 +9,5 @@ import org.scalatestplus.junit.JUnitRunner
  *    - Matchers
  *    - BeforeAndAfter
  */
-@RunWith(classOf[JUnitRunner])
-class BaseFlatSpec extends FlatSpec
+
+class BaseFlatSpec extends FlatSpec with Matchers

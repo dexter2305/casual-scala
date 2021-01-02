@@ -1,11 +1,8 @@
 package edu.learnings.concepts
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class EqualityInScala extends FlatSpec with Matchers {
+class EqualityInScala extends BaseFlatSpec {
 
   case class Vehicle(brand: String)
 
