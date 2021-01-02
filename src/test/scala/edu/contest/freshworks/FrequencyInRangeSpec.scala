@@ -1,11 +1,9 @@
 package edu.contest.freshworks
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class FrequencyInRangeSpec extends FlatSpec with Matchers{
+
+class FrequencyInRangeSpec extends BaseFlatSpec {
 
   "FrequencyInRange" should "pass tests with absolute range where limit == input.length" in {
     val findFrequencyInRange = new FindFrequencyInRange

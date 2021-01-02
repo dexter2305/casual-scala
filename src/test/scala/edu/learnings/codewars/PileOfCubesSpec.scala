@@ -1,11 +1,8 @@
 package edu.learnings.codewars
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class PileOfCubesSpec extends FlatSpec with Matchers{
+class PileOfCubesSpec extends BaseFlatSpec {
 
   "Pile of cubes" should " be 3 when volume is 36" in {
     val pileOfCubes = new PileOfCubes

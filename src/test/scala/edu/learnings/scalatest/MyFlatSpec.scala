@@ -1,13 +1,8 @@
 package edu.learnings.scalatest
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-
-
-@RunWith(classOf[JUnitRunner])
-class MyFlatSpec extends FlatSpec {
+class MyFlatSpec extends BaseFlatSpec {
 
   "An empty list" should " be of size == 0" in {
     assertResult(0)(List.empty.size)
@@ -19,11 +14,10 @@ class MyFlatSpec extends FlatSpec {
 
 }
 
-@RunWith(classOf[JUnitRunner])
-class MyFlatSpecWithMatchers extends FlatSpec with Matchers {
+class MyFlatSpecWithMatchers extends BaseFlatSpec {
 
   "An empty set" should " have 0 elements in it" in {
-    Set.empty.size should equal (0)
+    Set.empty.size should equal(0)
   }
 
   it should "should not no elements" in {

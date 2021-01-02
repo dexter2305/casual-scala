@@ -1,14 +1,11 @@
 package edu.learnings.concepts
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class ModValues extends FlatSpec with Matchers{
+class ModValues extends BaseFlatSpec {
 
   "Mod value" should "5 % 4 = 1" in {
-    5 % 4 shouldEqual  1
+    5 % 4 shouldEqual 1
   }
   it should "4 % 4 == 0" in {
     4 % 4 shouldEqual 0

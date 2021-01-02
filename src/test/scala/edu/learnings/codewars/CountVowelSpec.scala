@@ -1,9 +1,9 @@
 package edu.learnings.codewars
 
 import edu.learnings.BaseFlatSpec
-import org.scalatest.Matchers
 
-class CountVowelSpec extends BaseFlatSpec with Matchers {
+
+class CountVowelSpec extends BaseFlatSpec {
 
   val instance = new CountVowels
   val tests = List(

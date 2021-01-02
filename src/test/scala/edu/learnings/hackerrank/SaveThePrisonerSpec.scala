@@ -1,11 +1,8 @@
 package edu.learnings.hackerrank
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class SaveThePrisonerSpec extends FlatSpec with Matchers{
+class SaveThePrisonerSpec extends BaseFlatSpec {
 
   private val savePrisoner = new SaveThePrisoner
   "Prisoner to save" should " 3 with prisoners: 4, candies: 6 and starting from 2" in {
@@ -21,11 +18,11 @@ class SaveThePrisonerSpec extends FlatSpec with Matchers{
   }
 
   it should "6 with p:7, c:19, s:2" in {
-    savePrisoner.saveThePrisoner(7,19,2) shouldEqual 6
+    savePrisoner.saveThePrisoner(7, 19, 2) shouldEqual 6
   }
 
   it should "3 with p:3 c:7 s:3" in {
-    savePrisoner.saveThePrisoner(3,7,3) shouldEqual 3
+    savePrisoner.saveThePrisoner(3, 7, 3) shouldEqual 3
   }
 
 }

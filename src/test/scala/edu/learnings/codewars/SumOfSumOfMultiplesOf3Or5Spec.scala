@@ -1,7 +1,7 @@
 package edu.learnings.codewars
 
-import edu.learnings.{BaseFlatSpec, BaseFunSpec}
-import org.scalatest.FunSpec
+import edu.learnings.BaseFunSpec
+
 
 class SumOfSumOfMultiplesOf3Or5Spec extends BaseFunSpec {
 

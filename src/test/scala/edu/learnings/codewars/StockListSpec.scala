@@ -1,11 +1,8 @@
 package edu.learnings.codewars
 
-import org.junit.runner.RunWith
-import org.scalatest.{FlatSpec, Matchers}
-import org.scalatestplus.junit.JUnitRunner
+import edu.learnings.BaseFlatSpec
 
-@RunWith(classOf[JUnitRunner])
-class StockListSpec extends FlatSpec with Matchers {
+class StockListSpec extends BaseFlatSpec {
 
   val stockList = new StockList
   "StockList " should " return type string" in {

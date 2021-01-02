@@ -1,8 +1,5 @@
 package edu.learnings
 
-import org.junit.runner.RunWith
-import org.scalatest.FunSpec
-import org.scalatestplus.junit.JUnitRunner
+import org.scalatest.funspec.AnyFunSpec
 
-@RunWith(classOf[JUnitRunner])
-class BaseFunSpec extends FunSpec
+class BaseFunSpec extends AnyFunSpec

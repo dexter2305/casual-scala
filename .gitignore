@@ -8,6 +8,7 @@ out
 #sbt
 target
 *.class
+.bsp
 
 #gradle
 .gradle

@@ -1,8 +1,5 @@
 package edu.learnings
 
-import org.junit.runner.RunWith
-import org.scalatest.FunSuite
-import org.scalatestplus.junit.JUnitRunner
+import org.scalatest.funsuite.AnyFunSuite
 
-@RunWith(classOf[JUnitRunner])
-abstract class BaseFunSuite extends FunSuite
+abstract class BaseFunSuite extends AnyFunSuite
