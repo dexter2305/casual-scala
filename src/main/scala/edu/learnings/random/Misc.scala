@@ -2,19 +2,10 @@ package edu.learnings.random
 
 object Misc extends App {
 
-  val x = "aabaab"
-  println(s"${x.slice(0, 5)}")
 
-  def matchBracket(input: String): Int = {
-    input.foldLeft(0)((acc, e) => e match {
-      case '(' => acc + 1
-      case ')' => acc - 1
-      case _ => acc
-    }) match {
-      case 0 => 0
-      case _ => 1
-    }
-  }
+  val x = BigInt(110)
+  println(s"${x * 2}")
+
 
   def learningReduceFunction(): Unit = {
     val numbers = Seq(1, 2, 3, 3, 5)
