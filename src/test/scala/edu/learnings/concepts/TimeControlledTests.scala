@@ -16,7 +16,11 @@ class TimeControlledTests extends AnyFlatSpec with TimeLimitedTests {
     Thread.sleep(100)
   }
 
-  it should "fail if it exceeds the limit" in {
+  /**
+   * Below test would fail as it exceeds the allotted time limit, intentionally.
+   * Test is marked ignore to save the build from failure. Test is retained for learning/reference.
+   */
+  ignore should "fail if it exceeds the limit" in {
     Thread.sleep(500)
   }
 }

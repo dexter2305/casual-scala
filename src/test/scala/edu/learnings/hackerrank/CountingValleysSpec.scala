@@ -28,10 +28,6 @@ class CountingValleysSpec extends BaseFlatSpec{
     assertResult(0)(CountingValleys.countingValleys(5, "UDDDU"))
   }
 
-  it should "be 2 in UDDDUUUUDDDDUU" in {
-    assertResult(2)(CountingValleys.countingValleys(12, "UDDDUUUUDDDDUU"))
-  }
-
   it should "be 1 in DDUDUU" in {
     assertResult(1)(CountingValleys.countingValleys(6, "DDUDUU"))
   }

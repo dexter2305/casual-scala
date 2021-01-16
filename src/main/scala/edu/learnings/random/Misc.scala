@@ -3,9 +3,9 @@ package edu.learnings.random
 object Misc extends App {
 
 
-  val x = BigInt(110)
-  println(s"${x * 2}")
-
+  val list = List.empty[Int]
+  val nlist = list :+ 1 :+ 2
+  println(s"${nlist.mkString(" ")}")
 
   def learningReduceFunction(): Unit = {
     val numbers = Seq(1, 2, 3, 3, 5)

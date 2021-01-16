@@ -59,23 +59,6 @@ class MinStackSpec extends BaseFlatSpec {
     assert(s.getMin() == -2)
   }
 
-  "Measure for constant time with 10^6 elements vs 1 element" should "be constant time" in {
-    val s = new MinStack
-    s.push(0)
-    var time = System.nanoTime()
-    s.getMin()
-    val ttOf1 = System.nanoTime() - time
-    val end = 5
-    //1 to 1_000_000 foreach(e => s.push(e))
-    1 to end foreach (e => s.push(e))
-    time = System.nanoTime()
-    val ttOfLarge = System.nanoTime() - time
-    println(s"t(1)     = $ttOf1")
-    println(s"t($end)  = $ttOfLarge")
-    println(s"diff = ${ttOfLarge - ttOf1}")
-    assert(ttOfLarge == ttOf1)
-  }
-
   "Push time" should " be constants" in {
     val s = new MinStack
     //s.push(0)
