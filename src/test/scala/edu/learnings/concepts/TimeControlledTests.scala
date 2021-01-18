@@ -9,7 +9,7 @@ class TimeControlledTests extends AnyFlatSpec with TimeLimitedTests {
   /**
    * max execution time for a test
    * */
-  val timeLimit: Span = Span(200, Millis)
+  val timeLimit: Span = Span(500, Millis)
 
 
   "TimeControlledTests" should "pass if it completes within the time limit" in {
@@ -21,7 +21,7 @@ class TimeControlledTests extends AnyFlatSpec with TimeLimitedTests {
    * Test is marked ignore to save the build from failure. Test is retained for learning/reference.
    */
   ignore should "fail if it exceeds the limit" in {
-    Thread.sleep(500)
+    Thread.sleep(800)
   }
 }
 
