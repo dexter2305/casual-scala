@@ -19,6 +19,10 @@ package edu.learnings.leetcode
 class FindKthLargestElementInUnsortedArray {
 
   def findKthLargest(nums: Array[Int], k: Int): Int = {
+    subOptimalSolution(nums, k)
+  }
+
+  def subOptimalSolution(nums: Array[Int], k: Int): Int = {
     val x:Array[Int] = nums.sorted.reverse
     //for (i <- x.indices) (println(s"arr($i) = ${x(i)}"))
     x(k-1)
