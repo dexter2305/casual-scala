@@ -1,4 +1,4 @@
-package edu.learnings.leetcode
+package edu.learnings.leetcode.arrays
 
 class KidsWithGreatestNumberOfCandies {
   def kidsWithCandies(candies: Array[Int], extraCandies: Int): Array[Boolean] = {

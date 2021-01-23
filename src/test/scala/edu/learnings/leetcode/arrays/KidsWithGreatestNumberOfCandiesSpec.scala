@@ -1,4 +1,4 @@
-package edu.learnings.leetcode
+package edu.learnings.leetcode.arrays
 
 import edu.learnings.BaseFlatSpec
 
