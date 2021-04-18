@@ -5,8 +5,7 @@ object IsPangram extends App {
   println(s"${checkIfPangram(q)}")
 
   def checkIfPangram(sentence: String): Boolean = {
-    val s =('a' to 'z').toSet[Char].intersect(sentence.toCharArray.toSet[Char])
-    s.size == 26
+    sentence.toSet.size == 26
   }
 
   def checkIfPangramOld(sentence: String): Boolean = {
