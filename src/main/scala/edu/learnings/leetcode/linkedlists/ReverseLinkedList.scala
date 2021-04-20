@@ -2,7 +2,7 @@ package edu.learnings.leetcode.linkedlists
 
 object ReverseLinkedList extends App {
 
-  val h = ListNode(Array(1,2,3))
+  val h = ListNode(Array(1, 2, 3))
   var a = reverseListWithRecursion(h)
   while (a != null) {
     println(a.x)
@@ -11,6 +11,16 @@ object ReverseLinkedList extends App {
 
   def reverseList(head: ListNode): ListNode = {
     reverseListWithRecursion(head)
+  }
+
+  def reverseLinkedListWithRecursionV2(head: ListNode): ListNode = {
+    @scala.annotation.tailrec
+    def go(prev: ListNode, current: ListNode, next: ListNode): ListNode = {
+      current.next = prev
+      if (next != null) go(current, next, next.next) else current
+    }
+
+    if (head == null) head else go(null, head, head.next)
   }
 
   def reverseListWithRecursion(head: ListNode): ListNode = {
@@ -25,6 +35,7 @@ object ReverseLinkedList extends App {
       }
 
     }
+
     head match {
       case null => head
       case x if x != null && x.next == null => x
