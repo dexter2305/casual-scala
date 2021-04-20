@@ -23,7 +23,7 @@ class PalindromeLinkedListSpec extends BaseFunSpec {
       PalindromeLinkedList.isPalindrome(h) shouldBe false
     }
 
-    it("should handle null") {
+    ignore ("testcase violates given constraint: [The number of nodes in the list is in the range [1, 105].] should handle null") {
       PalindromeLinkedList.isPalindrome(null) shouldBe true
     }
 
