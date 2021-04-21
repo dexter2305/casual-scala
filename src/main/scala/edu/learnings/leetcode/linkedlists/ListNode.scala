@@ -24,6 +24,7 @@ object ListNode extends App {
         }
       }
     }
+
     go(node, "")
   }
 
@@ -40,6 +41,15 @@ object ListNode extends App {
       }
     }
     head
+  }
+
+  @scala.annotation.tailrec
+  def sameElements(a: ListNode, b: ListNode): Boolean = {
+    (a, b) match {
+      case (null, null) => true
+      case (null, _) | (_, null) => false
+      case (a, b) => if (a.x != b.x) false else sameElements(a.next, b.next)
+    }
   }
 }
 
