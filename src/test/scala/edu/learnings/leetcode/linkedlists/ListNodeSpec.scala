@@ -22,13 +22,13 @@ class ListNodeSpec extends BaseFlatSpec {
     ListNode.sameElements(ListNode(Array(1, 2)), ListNode(Array(1, 2, 3, 4))) shouldBe false
   }
 
-  "toString" should "non-null string for a non empty List" in {
-    ListNode(Array(1,2,3)).toString shouldBe "1-2-3"
+  "asString" should "non-null string for a non empty List" in {
+    ListNode(Array(1,2,3)).asString() shouldBe "1-2-3"
   }
 
   it should "return only the element when List has only one element" in {
     val x = new ListNode()
-    ListNode(Array(1)).toString shouldBe "1"
+    ListNode(Array(1)).asString() shouldBe "1"
   }
 
 }

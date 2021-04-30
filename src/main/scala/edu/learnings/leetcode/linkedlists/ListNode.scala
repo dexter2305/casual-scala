@@ -4,12 +4,12 @@ case class ListNode(_x: Int = 0, _next: ListNode = null) {
   var next: ListNode = _next
   var x: Int = _x
 
-  override def toString: String = {
+  def asString(delimiter: String = "-"): String = {
     @scala.annotation.tailrec
     def makeString(n: ListNode, acc: String): String = {
       if (n == null) acc else acc match {
         case "" => makeString(n.next, n.x.toString)
-        case _ => makeString(n.next, acc + "-" + n.x.toString)
+        case _ => makeString(n.next, acc + delimiter+ n.x.toString)
       }
     }
 
