@@ -23,6 +23,8 @@ class ArrayProblemsSpec extends BaseFunSpec {
       }
 
       it ("should return 0 when length of array == 1") (ArrayProblems.pivotIndex(Array(1)) shouldBe 0)
+
+      it ("should return 0 for [0,0,0]") (ArrayProblems.pivotIndex(Array(0,0,0)) shouldBe 0)
     }
   }
 }
