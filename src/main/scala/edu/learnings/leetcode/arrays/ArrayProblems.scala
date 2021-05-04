@@ -67,4 +67,23 @@ object ArrayProblems {
     go(nums, 0, Array.fill[Int](nums.length)(0))
   }
 
+  //https://leetcode.com/explore/challenge/card/may-leetcoding-challenge-2021/598/week-1-may-1st-may-7th/3731/
+  def checkPossibility(nums: Array[Int]): Boolean = {
+    var counter = 0
+    for (i <- 1 until nums.length) {
+      // previous number > current. - either correct previous or this one;
+      // since we passed through elements, we can use second previous to make decision about which one to fix; current or previous.
+      // if second previous is smaller than current as in...[ 1(i-2), 4(i-1), 2(i)... then correct to [1, **2**, 2.. => changed nums(i -1)
+      // if second previous is larger than current as in ...[ 3(i-2), 5(i -1), 2(i)... then correct to [3, 5, **5**, ... => changed nums(i)
+      if (nums(i - 1) > nums(i)) {
+        if (i < 2 || nums(i - 2) <= nums(i)) {
+          nums(i - 1) = nums(i)
+        } else {
+          nums(i) = nums(i - 1)
+        }
+        counter += 1
+      }
+    }
+    counter <=1
+  }
 }
