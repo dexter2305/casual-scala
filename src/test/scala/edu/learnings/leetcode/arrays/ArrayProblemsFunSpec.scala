@@ -5,7 +5,7 @@ import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
 
 import scala.util.Random
 
-class ArrayProblemsSpec extends BaseFunSpec {
+class ArrayProblemsFunSpec extends BaseFunSpec {
 
   describe("ArrayProblems") {
     describe("createTargetArray") {
