@@ -49,4 +49,22 @@ object ArrayProblems {
         }
     }
   }
+
+  //https://leetcode.com/explore/featured/card/may-leetcoding-challenge-2021/598/week-1-may-1st-may-7th/3730/
+  def runningSum(nums: Array[Int]): Array[Int] = {
+    @scala.annotation.tailrec
+    def go(n: Array[Int], i: Int, acc: Array[Int]): Array[Int] = {
+      if (i < n.length) {
+        i match {
+          case index if index == 0 => acc(index) = n(index)
+            go(n, i + 1, acc)
+          case index => acc(index) = acc(index - 1) + n(index)
+            go(n, i + 1, acc)
+        }
+      } else acc
+    }
+
+    go(nums, 0, Array.fill[Int](nums.length)(0))
+  }
+
 }
