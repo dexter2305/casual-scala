@@ -86,4 +86,15 @@ object ArrayProblems {
     }
     counter <=1
   }
+
+  def plusOne(digits: Array[Int]): Array[Int] = {
+    val r: Array[(Int, Int)] = digits.scanRight((1,0))((e,t) => {
+      t match {
+        case (carry, _) => val x = carry + e
+          if (x < 10) (0, x) else (x / 10, x % 10)
+      }
+    }).take(digits.length)
+    val (carry, _) = r.head
+    if (carry > 0) carry +: r.map(_._2) else r.map(_._2)
+  }
 }
