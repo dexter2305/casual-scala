@@ -84,11 +84,11 @@ object ArrayProblems {
         counter += 1
       }
     }
-    counter <=1
+    counter <= 1
   }
 
   def plusOne(digits: Array[Int]): Array[Int] = {
-    val r: Array[(Int, Int)] = digits.scanRight((1,0))((e,t) => {
+    val r: Array[(Int, Int)] = digits.scanRight((1, 0))((e, t) => {
       t match {
         case (carry, _) => val x = carry + e
           if (x < 10) (0, x) else (x / 10, x % 10)
@@ -97,4 +97,29 @@ object ArrayProblems {
     val (carry, _) = r.head
     if (carry > 0) carry +: r.map(_._2) else r.map(_._2)
   }
+
+  def findDiagonalOrder(mat: Array[Array[Int]]): Array[Int] = {
+
+    val dc = mat.length + mat(0).length - 1
+
+    def altInvertedDiagonals(mat: Array[Array[Int]], dc: Int): Array[Int] = {
+      val diagonal = for (row <- mat.indices;
+                          column <- mat(row).indices;
+                          if row + column == dc) yield {
+        mat(row)(column)
+      }
+      println(s"dc: $dc, diagonal: ${diagonal.mkString(" ")}")
+      if (dc % 2 == 0) diagonal.reverse.toArray
+      else diagonal.toArray
+    }
+
+    //val diags = (for (i <- 0 to dc) yield altInvertedDiagonals(mat, i)).toArray
+    var diags: Array[Int] = Array()
+    for (i <- 0 to dc) {
+      diags = diags ++ altInvertedDiagonals(mat, i)
+    }
+    println(s"${diags.mkString(" ")}")
+    diags
+  }
+
 }
