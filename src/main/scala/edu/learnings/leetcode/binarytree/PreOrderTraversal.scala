@@ -55,7 +55,7 @@ object PreOrderTraversal extends App {
       case null => Nil
       case _ =>
         var l: List[Int] = Nil
-        l = root.value :: (preorderTraversal(root.left) ::: preorderTraversal(root.right))
+        l = root.value :: (preOrderTraversalRecursion(root.left) ::: preOrderTraversalRecursion(root.right))
         l
     }
   }
