@@ -11,6 +11,7 @@ class PreOrderTraversalSpec extends BaseFlatSpec {
     val four: TreeNode = TreeNode(4)
     val five: TreeNode = TreeNode(5)
     val six: TreeNode = TreeNode(6)
+    val seven: TreeNode = TreeNode(7)
   }
   "PreOrderTraversal with recursion" should "return [1,2,3] for [1, null, 2, 3]" in new UnboundedNodes {
     one.right = two
@@ -35,6 +36,15 @@ class PreOrderTraversalSpec extends BaseFlatSpec {
     two.right = five
     three.right = six
     PreOrderTraversal.preOrderTraversalRecursion(one) shouldBe List(1,2,4,5,3,6)
+  }
+  it must "return [1,2,4,5,3,6] for [1,2,3,4,5,7,6]" in new UnboundedNodes {
+    one.left = two
+    one.right = three
+    two.left = four
+    two.right = five
+    three.left = seven
+    three.right = six
+    PreOrderTraversal.preOrderTraversalRecursion(one) shouldBe List(1,2,4,5,3,7,6)
   }
 
   "PreOrderTraversal iteration" should "return [1,2,3] for [1, null, 2, 3]" in new UnboundedNodes {
