@@ -9,6 +9,9 @@ out
 target
 *.class
 .bsp
+.bloop
+.metals
+.vscode 
 
 #gradle
 .gradle
